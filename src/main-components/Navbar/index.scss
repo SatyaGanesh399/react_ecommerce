@@ -1,0 +1,44 @@
+@import "../../../src/App.scss";
+.navbar-container {
+  padding: 10px;
+  margin-top: 10px;
+}
+.navbar-links {
+  margin-left: 70px;
+}
+.navbar-links2 {
+  margin-top: 80px;
+}
+.drawer-logo {
+  position: absolute;
+  top: 10px;
+  left: 37%;
+}
+.navbar-menu {
+  width: 30px;
+  height: 30px;
+  color: $secondary-color;
+  display: none;
+  position: relative;
+  top: 5px;
+}
+.nav-item {
+  margin: 10px;
+  font-weight: $font-semibold;
+  cursor: pointer;
+  color: $secondary-color;
+}
+.nav-item:hover {
+  color: $primary-color;
+}
+@media screen and (max-width: 700px) {
+  .nav-options {
+    display: none;
+  }
+  .navbar-links {
+    display: none;
+  }
+  .navbar-menu {
+    display: block;
+  }
+}

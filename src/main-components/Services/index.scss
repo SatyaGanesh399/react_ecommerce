@@ -1,0 +1,26 @@
+@import "../../App.scss";
+.service-icon svg {
+  color: red;
+  font-size: 2rem;
+  opacity: 0.7;
+}
+.services-heading {
+  font-size: $font-xxs;
+  font-weight: $font-bold;
+  color: black;
+}
+.services-subHeading {
+  font-size: $font-xs;
+  font-weight: $font-semibold;
+  color: black;
+  opacity: 0.5;
+}
+.services-each-tab {
+  width: 120px;
+  height: 100px;
+}
+@media screen and (max-width: 500px) {
+  .service-tabs {
+    justify-content: center !important;
+  }
+}

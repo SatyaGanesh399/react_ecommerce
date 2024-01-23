@@ -1,0 +1,115 @@
+@import "../../App.scss";
+.footer-container {
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1.5fr;
+  grid-template-rows: 1fr;
+  align-items: flex-start;
+}
+.socialmedia-icon {
+  font-size: $font-lg;
+  color: $primary-color;
+  margin-right: 10px;
+}
+.footer-social-media {
+}
+.footer-item1 {
+  p {
+    font-size: $font-sm;
+    font-weight: $font-semibold;
+  }
+}
+.footer-heading {
+  font-size: $font-md !important;
+  font-weight: $font-bold !important;
+  margin-bottom: 10px !important;
+  color: $primary-color !important;
+}
+.footer-item2 {
+  span {
+    width: 100%;
+    display: block;
+    font-size: $font-sm;
+    font-weight: $font-semibold;
+    margin-bottom: 5px;
+    color: $primary-color;
+  }
+}
+.footer-item3 {
+  p {
+    width: 80%;
+    font-size: $font-xs;
+    color: $primary-color;
+  }
+}
+.footer-item4 {
+  p {
+    font-size: $font-lg;
+    font-weight: $font-bolder;
+    margin: 5px 0px;
+  }
+}
+.footer-subscribe {
+  position: relative;
+  input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid $secondary-color;
+    margin: 5px 0;
+  }
+  button {
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    background-color: $red !important;
+    font-size: $font-xxs;
+    color: black !important;
+    font-weight: $font-semibold;
+    border: 0px !important;
+    :hover {
+      background-color: transparent !important;
+      color: $red !important;
+      border: 1px solid $red !important;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    place-items: center;
+  }
+  .footer-social-media {
+    justify-content: center !important;
+  }
+  .footer-item1 {
+    text-align: center;
+  }
+  .footer-item3 {
+    text-align: center;
+  }
+  .footer-item3 p {
+    text-align: center;
+    margin: auto;
+  }
+  .footer-item2 span {
+    text-align: center;
+  }
+  .footer-heading {
+    text-align: center;
+  }
+  .footer-subscribe input {
+    width: 90%;
+  }
+  .footer-subscribe button {
+    right: 20px;
+  }
+}

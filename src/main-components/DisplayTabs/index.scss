@@ -1,0 +1,193 @@
+@import "../../App.scss";
+
+.display-tabs {
+  padding: 10px;
+  margin-top: 10px;
+}
+.tab-container {
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.top-tabs {
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.bottom-tabs {
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.tabs-red-button {
+  width: 160px;
+  background-color: $red !important;
+  font-size: $font-lg;
+  font-weight: $font-semibold;
+  color: $white;
+  border: rgba($color: #000000, $alpha: 0);
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+.tabs-red-button:hover {
+  border: 1px solid $red !important;
+  background-color: transparent !important;
+  color: $red !important;
+}
+.tabs-white-button {
+  width: 160px;
+  background-color: $white !important;
+  font-size: $font-lg;
+  font-weight: $font-semibold;
+  color: black;
+  border: rgba($color: #000000, $alpha: 0);
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+.tabs-white-button:hover {
+  border: 1px solid $white !important;
+  background-color: transparent !important;
+  color: $white !important;
+}
+.small-tab-container {
+  width: 350px;
+  height: 250px;
+  position: relative;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  overflow: hidden;
+}
+.big-tab-container {
+  position: relative;
+  flex-grow: 1;
+  height: 250px;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  overflow: hidden;
+}
+.small-tab-left {
+  margin-left: 20px;
+}
+.text1 {
+  font-size: $font-md;
+  font-weight: $font-bold;
+}
+.text2 {
+  font-size: $font-lg;
+  font-weight: $font-bold;
+}
+.text3 {
+  font-size: $font-2xl;
+  font-weight: $font-bold;
+  opacity: 0.4;
+}
+
+.small-tab-image {
+  width: 220px;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.big-tab-image {
+  width: 300px;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.blackColor-gradient {
+  background: #222222; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #363636,
+    #222222
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #363636,
+    #222222
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.yellow-gradient {
+  background: #cac531; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fdc62e,
+    #ffc629
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fdc62e,
+    #ffc629
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.red-gradient {
+  background: #f42c37; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fc4b57,
+    #f42c37
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fc4b57,
+    #f42c37
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.white-gradient {
+  background: #ededef; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ededef,
+    #eeeeee
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ededef,
+    #eeeeee
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.green-gradient {
+  background: #2ad16e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2ad16e,
+    #24d16b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2ad16e,
+    #24d16b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.blue-gradient {
+  background: #107cff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #107cff,
+    #188dff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #107cff,
+    #188dff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@media screen and (max-width: 900px) {
+  .small-tab-container {
+    min-width: 300px;
+    width: auto;
+    flex: 1;
+  }
+  .big-tab-container {
+    min-width: 300px;
+    width: auto;
+  }
+  .small-tab-image {
+    width: 50%;
+    top: 20%;
+  }
+  .big-tab-image {
+    width: 50%;
+    top: 20%;
+  }
+}
