@@ -34,7 +34,7 @@ function index() {
           There are many variations passages
         </p>
       </div>
-      <div className="margin-20 news-items-container gap-20 d-flex align-items-center justify-content-center flex-wrap">
+      <div className="news-items-container gap-20 d-flex align-items-center justify-content-center flex-wrap">
         {NewsData.map((item) => {
           return (
             <NewsItem

@@ -21,29 +21,31 @@
   margin-left: 200px;
 }
 .header-right {
-  margin-left: 200px;
-  margin-top: 50px;
+  margin-left: 150px;
+  margin-top: 30px;
 }
 .header-small {
   font-size: $font-lg;
   margin-left: 10px;
+  margin-bottom: 5px;
 }
 .header-large {
   font-size: $font-xl;
   font-weight: $font-bold;
-  margin-top: 10px;
+  margin-bottom: 5px;
   margin-left: 10px;
 }
 .header-extralarge {
-  margin-top: -10px;
-  font-size: 12vw;
+  margin-top: -30px;
+  font-size: 11vw;
   font-weight: 900;
   word-spacing: 1.5rem;
   color: $white;
 }
 .header-buy-button {
   background-color: $red !important;
-  font-size: $font-lg;
+  font-size: $font-md;
+  line-height: 0px;
   font-weight: $font-semibold;
   color: $light-color;
   border: rgba($color: #000000, $alpha: 0);
@@ -56,7 +58,7 @@
 }
 
 .headphones-image {
-  width: 30%;
+  width: 25%;
   object-fit: contain;
   -moz-transform: scale(-1, -1);
   -o-transform: scale(-1, -1);
