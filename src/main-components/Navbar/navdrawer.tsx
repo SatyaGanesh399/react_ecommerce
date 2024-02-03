@@ -1,8 +1,6 @@
-import React, { useState } from "react";
-import type { DrawerProps, RadioChangeEvent } from "antd";
-import { Button, Divider, Drawer, Radio, Space } from "antd";
+import { Divider, Drawer } from "antd";
 import Logo from "../../extras/logo";
-import { relative } from "path";
+import { CloseOutlined } from "@ant-design/icons";
 
 type drawerProps = {
   open: boolean;
@@ -25,8 +23,9 @@ const NavDrawer = ({ open, setOpen }: drawerProps) => {
         key={"left"}
         style={{ position: "relative" }}
       >
-        <div className="d-flex align-items-center justify-content-start flex-column">
+        <div className="d-flex align-items-center justify-content-start flex-column position-relative">
           <Logo classname="drawer-logo" />
+          <CloseOutlined onClick={onClose} className="close-icon-nav" />
           <div className="navbar-links2 d-flex align-items-center justify-content-center flex-column">
             <span className="nav-item">Home</span>
             <span className="nav-item">Shop</span>
